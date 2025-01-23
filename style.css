@@ -1,4 +1,3 @@
-/* styles.css */
 :root {
     --color-primary: #4B69FD;
     --color-secondary: #FFF9EB;
@@ -9,7 +8,7 @@
     --color-white: #FFFFFF;
 }
 
-/* Estilos generales */
+/* Estilos gerais */
 * {
     margin: 0;
     padding: 0;
@@ -20,8 +19,16 @@ body {
     height: 100vh;
     background-color: var(--color-primary);
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: center; /* centraliza horizontalmente */
+    align-items: center; /* centraliza verticalmente */
+    margin: 0; /* remove margens */
+    padding: 0; /* remove paddings */
+}
+
+.container {
+    max-width: 800px; /* define o máximo de largura */
+    margin: 0 auto; /* centraliza horizontalmente */
+    padding: 20px; /* adiciona padding */
 }
 
 .main-content {
@@ -40,7 +47,7 @@ body {
     padding: 40px 0 0;
 }
 
-/* Sección de entrada */
+/* Seção de entrada */
 .input-section {
     flex: 60%;
     background-color: var(--color-secondary);
@@ -71,7 +78,7 @@ body {
     text-align: center;
 }
 
-/* Contenedores de entrada y botón */
+/* Contenedores de entrada e botão */
 .input-wrapper {
     display: flex;
     justify-content: center;
@@ -98,13 +105,4 @@ body {
     flex: 1;
     padding: 10px 15px;
     font-size: 16px;
-    border: 2px solid #333;
-    border-right: none;
-    border-radius: 25px 0 0 25px;
-    font-family: "Merriweather", serif;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
-
-/* Estilos de botón */
-button {
-    padding:
+    border: 2
