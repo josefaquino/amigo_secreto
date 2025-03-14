@@ -16,25 +16,29 @@
 }
 
 body {
-    height: 100vh;
-    background-color: var(--color-primary);
+    height: 100vh; /* Altura total da visualização */
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    background-color: var(--color-primary); /* Cor de fundo */
     margin: 0;
     padding: 0;
 }
 
 .container {
-    max-width: 800px;
-    margin: 0 auto;
+    max-width: 800px; /* Largura máxima */
+    width: 100%; /* Responsivo */
     padding: 20px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    justify-content: center; /* Centraliza horizontalmente os elementos internos */
+    align-items: center; /* Centraliza verticalmente os elementos internos */
+    flex-direction: column; /* Coloca os elementos um embaixo do outro */
+    background-color: var(--color-secondary); /* Fundo do contêiner */
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destaque */
 }
 
+/* Conteúdo principal */
 .main-content {
     display: flex;
     flex-direction: column;
@@ -44,18 +48,15 @@ body {
 
 /* Banner */
 .header-banner {
-    flex: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 40px 0 0;
+    padding: 20px 0;
 }
 
 /* Seção de entrada */
 .input-section {
-    flex: 60%;
     background-color: var(--color-secondary);
-    border: 1px solid #000;
     border-radius: 64px 64px 0 0;
     display: flex;
     flex-direction: column;
@@ -82,7 +83,7 @@ body {
     text-align: center;
 }
 
-/* Contenedores de entrada e botão */
+/* Estilização do campo de entrada */
 .input-wrapper {
     display: flex;
     justify-content: center;
@@ -94,21 +95,29 @@ body {
 .input-name {
     width: 100%;
     padding: 10px;
-    border: 2px solid #000;
+    border: 2px solid var(--color-tertiary);
     border-radius: 25px 0 0 25px;
     font-size: 16px;
 }
 
+/* Botões */
 .button-container {
-    width: 300px;
+    display: flex;
     justify-content: center;
+    margin-top: 20px;
 }
 
-/* Estilos de entrada de texto */
-.input-title {
-    flex: 1;
-    padding: 10px 15px;
+button {
+    padding: 10px 20px;
     font-size: 16px;
-    border: 2px solid #000;
-    border-right: none;
-    border-radius: 25px 0 0 25px
+    color: var(--color-white);
+    background-color: var(--color-button);
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--color-button-hover);
+}
