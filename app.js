@@ -1,4 +1,5 @@
-// El principal objetivo de este desafío es fortalecer tus habilidades en lógica de programación. Aquí deberás desarrollar la lógica para resolver el problema.// Selecciona los elementos del DOM
+// El principal objetivo de este desafío es fortalecer tus habilidades en lógica de programación. Aquí deberás desarrollar la lógica para resolver el problema.
+// Selecciona los elementos del DOM
 const inputNombre = document.getElementById('amigo');
 const listaAmigos = document.getElementById('listaAmigos');
 const resultado = document.getElementById('resultado');
@@ -56,7 +57,7 @@ function sortearAmigo() {
         const amigoSorteado = amigos[Math.floor(Math.random() * amigos.length)];
 
         // Muestra el resultado en el DOM
-        resultado.textContent = `El amigo sorteado es: ${amigoSorteado}`;
+        resultado.textContent = `O amigo sorteado e: ${amigoSorteado}`;
     } else {
         // Muestra un mensaje de error si la lista de amigos está vacía
         alert('Por favor, agrega amigos a la lista antes de sortear');
